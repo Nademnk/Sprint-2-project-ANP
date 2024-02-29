@@ -1,0 +1,23 @@
+.site-section {
+    background-color: #c8d8e7;
+    padding: 50px;
+}
+
+.text-center {
+    /* Example style */
+    text-align: center;
+}
+
+.btn-primary {
+    /* Example style */
+    background-color: #0d6c79;
+    color: #f7f4f4;
+    border: none;
+}
+
+.btn-primary:hover {
+    /* Example style */
+    background-color: #4cd6cf;
+}
+
+  

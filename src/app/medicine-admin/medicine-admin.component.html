@@ -1,0 +1,50 @@
+
+<div class="table-responsive container mt-5 ">
+  <table class="table table-striped table-bordered table-hover table-primary" id="myTable" >
+    <thead class="thead-light">
+      <tr class="text-center bs-dark-text-emphasis: #495057">
+        <th>Id</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Company</th>
+        <th>Cost</th>
+        <th>Dose</th>
+        <th>Stock</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of posts">
+        <td>{{i.mdcnid}}</td>
+        <td><input type="text" [(ngModel)]="i.mdcnName" class="form-control rounded" /></td>
+        <td><input type="text" [(ngModel)]="i.mdcnType" class="form-control rounded" /></td>
+        <td><input type="text" [(ngModel)]="i.cmpnyOfmdcn" class="form-control rounded" /></td>
+        <td><input type="number" [(ngModel)]="i.mdcnCost" class="form-control rounded" /></td>
+        <td><input type="text" [(ngModel)]="i.mdcnDose" class="form-control rounded" /></td>
+        <td><input type="number" [(ngModel)]="i.mdcnStock" class="form-control rounded" /></td>
+        <td>
+          <button type="submit" (click)="update(i.mdcnid,i.mdcnName,i.mdcnType,i.cmpnyOfmdcn,i.mdcnCost,i.mdcnDose,i.mdcnStock)"
+                  class="btn btn-primary rounded mr-2">Update</button>
+        </td>
+        <td>
+          <button type="submit" (click)=" Delete(i.mdcnid)" class="btn btn-danger rounded">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="number" class="form-control rounded" /></td>
+        <td><input type="text" [(ngModel)]="model2.mdcnName" class="form-control rounded" /></td>
+        <td><input type="text" [(ngModel)]="model2.mdcnType" class="form-control rounded" /></td>
+        <td><input type="text" [(ngModel)]="model2.cmpnyOfmdcn" class="form-control rounded" /></td>
+        <td><input type="number" [(ngModel)]="model2.mdcnCost" class="form-control rounded" /></td>
+        <td><input type="text" [(ngModel)]="model2.mdcnDose" class="form-control rounded" /></td>
+        <td><input type="number" [(ngModel)]="model2.mdcnStock" class="form-control rounded" /></td>
+        <td>
+          <button type="submit" (click)="create()" class="btn btn-success rounded col-4 col-sm-9">Add</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+

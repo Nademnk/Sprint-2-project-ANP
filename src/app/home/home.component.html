@@ -1,0 +1,88 @@
+<!--Header section
+<h1 style="background-color: aqua; text-align: center;">Bluechem</h1>
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="text-center">Login</h3>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="username">Email</label>
+              <input type="text" class="form-control" id="email" name="email" placeholder="Enter username" [(ngModel)]="model.email">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" [(ngModel)]="model.password">
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary" (click)="userlogin()">User Login</button>&nbsp;
+              <button type="submit" class="btn btn-primary" (click)="usersignup()">User Signup</button>&nbsp;
+              <button type="submit" class="btn btn-primary" (click)="adminLogin()">Admin Login</button>&nbsp;
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>--->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="login-container">
+        <h2 class="login-title">Bluechem</h2>
+        <form>
+          <div class="form-group">
+            <label for="username">Email</label>
+            <input type="text" class="form-control" id="email" name="email" placeholder="Enter email" [(ngModel)]="model.email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" [(ngModel)]="model.password">
+          </div>
+          <div class="button-group">
+            <button type="submit" class="btn btn-primary" (click)="userlogin()">User Login</button>
+            <button type="submit" class="btn btn-primary" (click)="usersignup()">User Signup</button>
+            <button type="submit" class="btn btn-primary" (click)="adminLogin()">Admin Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <style>
+
+    
+    .login-container {
+      max-width: 400px;
+      margin: 5rem auto;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      background-image:linear-gradient(to bottom , #5adee7, #0e626d);
+    }
+
+    .login-title {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .btn-primary {
+      margin-right: 0.5rem;
+    }
+  </style>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-w4Q/lT89EcCCvfu1YOZt2zU5bVl/pG55K58yC7QO3+aU8W91vkRfvNlsq6zKYEg" crossorigin="anonymous"></script>
+  
+</div>
